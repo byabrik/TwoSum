@@ -17,9 +17,7 @@ namespace TwoSum
             {
                 int diff = sum - list[i];
                 if (dict.ContainsKey(diff))
-                {
                     return new Tuple<int, int>(i, dict[diff]);
-                }
 
                 if (!dict.ContainsKey(list[i]))
                     dict[list[i]] = i;
